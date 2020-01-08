@@ -1,0 +1,120 @@
+
+h1 {
+  color: #908989;
+  text-align: center;
+  font-size: 36px;
+  background-color: #ffffff;
+  font-family: 'Kaushan Script', cursive;
+  text-decoration: underline;
+  margin-top: 0;
+}
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+html{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #908989;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.main-header{
+  flex: 0 1 auto;
+}
+.main-content{
+  flex: 1 1 auto;
+  flex-direction: column;
+  display: flex;
+}
+@media all and (min-width: 768px){
+  .main-content{
+    flex-direction: row;
+    overflow: hidden;
+  }
+  .thumbnail-list{
+    flex-direction: column;
+    order:0!important;
+    margin-left: 20px;
+  }
+  .detail-image-container{  
+    align-items: flex-start!important;
+
+  }
+  .detail-image-title{
+    position: relative!important;
+  }
+  .detail-image-frame{
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    margin: 20px 0 0 25px;
+  }
+  h1{
+   font-size: 10em;
+  margin-bottom: 10px;
+  }
+}
+.thumbnail-list{
+  background-color: #fff;
+  white-space: nowrap;
+  overflow-x: auto;
+  flex: 0 1 auto;
+  order: 2;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.thumbnail-item{
+  display: inline-block;
+  border: 1px solid rgb(100%, 100%, 100%, 0.8);
+  border: 1px solid rgba(100%, 100%, 100%, 0.8);
+  max-width: 320px;
+  min-width: 120px;
+}
+.detail-image-container{
+  position: relative;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail-image-frame{
+   text-align: center;
+}
+.detail-image-title{
+  color: #fff;
+  font-size: 30px;
+  text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  left: 4px;
+  bottom: -16px;
+}
+.detail-image{
+  width: 90%;
+/*  max-height: 60vh;*/
+}
+
+.thumbnail-image{
+  width: 100%;
+}
+.thumbnail-title {
+  display: block;
+  margin: 0;
+  padding: 4px 10px;
+  background: rgb(96, 125, 139);
+  color: rgb(202, 238, 255);
+}
+
