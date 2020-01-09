@@ -4,9 +4,12 @@
     overflow: hidden;
   }
   .thumbnail-list{
+    width: 100%;
+    background-color: #908989;
     flex-direction: column;
     order:0!important;
-    margin-left: 20px;
+    margin-left: 10px;
+    padding: 25px;
   }
   .detail-image-container{  
     align-items: flex-start!important;
@@ -23,9 +26,7 @@
     margin-top: -50px;
     font-size: 4em;
   }
-  .detail-image{
-    margin-left: 30px;
-  }
+
   h1{
    font-size: 7em;
   margin-bottom: 10px;
